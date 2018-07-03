@@ -55,7 +55,7 @@ Decimal('7450.10')
 >>> sum(month[0] for month in islice(m.monthly_payment_schedule(), 12, 24))
 Decimal('7753.61')
 
-We can verify that we'll be done in 15 years (180 months):
+We can verify that we will be done in 15 years (180 months):
 
 >>> payments = list(m.monthly_payment_schedule())
 >>> assert len(payments) == 180
